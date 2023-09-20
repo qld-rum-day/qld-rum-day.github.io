@@ -5,8 +5,18 @@ $theme-colors: (
 
 );
 
-@import "node_modules/bootstrap/scss/bootstrap";
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+);
+$enable-negative-margins: true;
 
+$border-radius: 2rem;
+
+@import "node_modules/bootstrap/scss/bootstrap";
 
 
 
@@ -17,6 +27,44 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-weight: 400;
     font-family: 'Bebas Neue', sans-serif;
+}
+
+.panel-title {
+    background-image: url('/img/long_tape_sm.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.label {
+    background-image: url('/img/short_tape_sm.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: inline;
+    padding: 2rem;
+    top: -2rem;
+}
+.quote {
+    font-size: 10rem;
+    height: 100px;
+    color: #E77212;
+    line-height: 1;
+    position: absolute;
+
+    &.start {
+        left: -17%;
+        top: -10%;
+    }
+    &.end {
+        right: -17%;
+        bottom: -10%;
+    }
 }
 .footer {
     
@@ -43,10 +91,10 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 .navbar-brand {
-    margin: 0;
+    margin: 0 2rem;
 
     img {
-        max-width: 200px;
+        width: 150px;
     }
 }
 
