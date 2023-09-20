@@ -10,8 +10,9 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1140px
+  xxl: 1141px
 );
+
 $enable-negative-margins: true;
 
 $border-radius: 2rem;
@@ -27,6 +28,36 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-weight: 400;
     font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero, .section-distilleries {
+    position: relative;
+}
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(0);
+}
+
+.custom-shape-divider-bottom svg,
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 73px;
 }
 
 .panel-title {
@@ -129,6 +160,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-right: 2rem;
     border-right: solid 4px #E77212;
     text-align: right;
+
     .label2 {
         color: #E77212;
         position: relative;
