@@ -9,74 +9,160 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="icon" href="./img/icon.png" />
         <title>QLD Rum Day</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400&display=swap"
+        rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-parallax-js/5.6.2/simpleParallax.min.js"
+        integrity="sha512-rLJmRoYJNB5AXXLAElKPeaSrcXDUTA41fiwTZ+S2JJXhMoWu4yQZvXlZZSIjRNVHYTkIYYw+r45wXCao49D5XA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container-fluid"> <a class="navbar-brand" href="./">Basic 5</a>
+        <nav class="navbar navbar-expand-md">
+            <div class="container py-2"> <a class="navbar-brand d-md-none" href="#">
+      <img src="https://codingyaar.com/wp-content/uploads/logo-1.png" alt="">
+    </a>
 
-                <button class="navbar-toggler"
-                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
 
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./">Home</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto align-items-center">
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a>
 
                         </li>
-                        <li class="nav-item"> <a class="nav-link" href="./about.html">About</a>
+                        <li class="nav-item"> <a class="nav-link" href="#">Features</a>
+
+                        </li> <a class="navbar-brand d-none d-md-block" href="#">
+          <img src="/img/logo_burdekinrum.png" alt="">
+        </a>
+
+                        <li class="nav-item"> <a class="nav-link" href="#">Pricing</a>
 
                         </li>
-                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-            </a>
+                        <li class="nav-item"> <a class="nav-link">Contact</a>
 
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a>
-
-                                </li>
-                                <li><a class="dropdown-item" href="#">Another action</a>
-
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a>
-
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container mt-5 mb-5">
-             <h1 class="display-3">QLD Rum Day</h1>
+        <section class="hero">
+            <img class="img-fluid" src="/img/hero.jpg">
+        </section>
+        <section class="section section-intro bg-primary text-white">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                         <h1 class="text-secondary">WHAT IS QUEENSLAND RUM DAY?</h1>
 
-            <p class="lead">Basic5 is a Bootstrap 5+ boilerplate with Gulp4, cross-env, Sass, sourcemaps,
-                concat, CSS & HTML minification, uglify, image optimization, template partials,
-                BrowserSync.</p>
-            <p><a target="_blank" class="btn btn-primary" href="https://bootstrapstarter.com/template-basic5-bootstrap5-html/"
-                role="button">Documentation &raquo;</a>
-            </p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                        <p>On the last Saturday of October every year we raise our glass to the unmistakable
+                            taste of Queensland and the incredible producers that Queensland Rum produced
+                            from Queensland sugar cane. The annual celebration of the much loved spirit
+                            of Queensland all over Australia and the World.</p>
+                    </div>
+                    <div class="col-lg-6">lgoo here</div>
                 </div>
             </div>
-        </div>
-        <footer class="footer container text-center">
-            <p>&copy; Bootstrap Basic5 Starter with Gulp</p>
+        </section>
+        <section class="hero-banner">
+            <img class="heroimage" src="/img/landscaperoad.jpg">
+        </section>
+        <section class="section section-intro bg-light text-dark">
+            <div class="container py-5">
+                <div class="col-lg-8 m-auto text-center">
+                    <p>Since 1906 “Queensland Rum” is defined by Australian law as a spirit of
+                        at least 37% ABV obtained by the distillation in Queensland and maturation
+                        in Queensland by storage in wood for at least 2 years of a fermented liquor
+                        derived from the products of sugar cane, being distillation carried out
+                        in such a manner that the spirit possesses the taste, aroma and other characteristics
+                        generally attributed to rum. Queensland Rum is most commonly made from
+                        molasses but can also be made from sugar cane juice, sugar cane syrup and
+                        sugar.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section section-intro bg-primary text-light">
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <img class="img-fluid" src="/img/David Ridden.jpeg">
+                        <caption>
+                             <h4>David Ridden></h4>
+
+                             <h6>PRESIDENT, QUEENSLAND DISTILLERS’ ASSOCIATION</h6>
+
+                        </caption>
+                    </div>
+                    <div class="col-lg-7">
+                        <p>Queensland spirits are equal to the very best in the World and Queensland
+                            distillers offers the opportunity for spirits to be to Queensland what
+                            wine is to South Australia, an export and job creation power house</p>
+                        <p>Since July 1867 rum distilled from Queensland sugar cane is to many Australian’s
+                            the definitive taste of Queensland but as consumers preferences and education
+                            are evolving so is Queensland rum. Queensland rum producers are sparing
+                            no effort to produce and mature rums that challenge long held beliefs that
+                            imported rums are always better. The Queensland Rum Renaissance is well
+                            and truly a thing!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero-banner">
+            <img class="heroimage" src="/img/sugarcane.jpg">
+        </section>
+        <section class="section section-intro bg-primary text-white">
+            <div class="container py-5">
+                <div class="col-lg-8 m-auto text-center">
+                    <p>Sugarcane was brought to Australia in 1788 on the ships of the First Fleet.
+                        It was not immediately successful even though attempts were still being
+                        made more than thirty years later to grow sugarcane commercially at Port
+                        Macquarie in NSW. Captain Louis Hope and John Buhot established the first
+                        viable Australian cane plantation at Ormiston near Brisbane in 1862. Two
+                        years later Hope started up the first commercial sugar mill.</p>
+                </div>
+            </div>
+        </section>
+        <section class="seciton section-distilleries bg-light text-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                         <h2 class="text-secondary">OUR DISTILLERIES</h2>
+
+                        <p>Queensland proudly has Australia’s oldest distillery - Beenleigh Rum,
+                            the largest - Bundaberg Rum, and a growing number of incredible Artisan
+                            producers including Nil Desperandum, producing Australia’s first Australian
+                            Certified Organic Rum, and household names including Burdekin Rum, Capricorn
+                            Distilling, FNQ Rum Co and Kalki Moon.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="/img/distilling-illustration_3.svg" class="fluid-img">
+                    </div>
+                </div>
+                <hr>
+                <div class="col-lg-10 m-auto logos">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <img src="/img/logo_capricorn_full.png" class="logo">
+                        <img src="/img/logo_bundaberg.png" class="logo">
+                        <img src="/img/logo_FNQ.png" class="logo">
+                        <img src="/img/logo_kalki-moon_black.png" class="logo">
+                        <img src="/img/logo_burdekinrum.png" class="logo">
+                        <img src="/img/logo_beenleigh_black.png" class="logo">
+                        <img src="/img/logo_beenleigh_black.png" class="logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center bg-primary text-light">
+            <div class="container py-3">
+                <p>&copy; Copyright Queensland Rum Day 2023 | <a class="text-white" href="https://www.weareva.com.au"
+                    target="_blank">Website by VA</a>
+
+                </p>
+            </div>
         </footer>
         <script src="./js/all.js"></script>
     </body>
