@@ -22,7 +22,35 @@
      </div>
 
 </section>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agegate">
+  Launch static backdrop modal
+</button>
+<!-- Modal -->
+<div class="modal" id="agegate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="mheader p-2 bg-primary text-center">
+        <h2 class="modal-title text-secondary m-0">Are you over 18?</h2>
+      </div>
+      <div class="modal-body text-center pb-0">
+        <h3 class="text-primary h2">Sorry Mate!</h3>
+        <p>You must be over 18 in order to enter this website.
+      </div>
+       <div class="mfooter pb-4 d-flex justify-content-center">
+        <button type="button" class="btn btn-primary mx-1" data-bs-dismiss="modal">Yes</button>
+        <a href="https://www.bluey.tv" class=" mx-1 btn btn-secondary">No</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="
+https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+"></script>
+
 <script src="./js/all.js"></script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();

@@ -193,3 +193,36 @@ h1,h2,h3,h4,h5,h6 {
         margin-bottom: 2rem;
     }
 }
+
+
+// Age Gate popup
+
+#agegate {
+    .modal-content {
+        border-radius: 25px;
+        overflow: hidden;
+
+        .btn {
+            background-image: url('/img/short_tape_sm.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            border: none !important;
+            color: white;
+            position: relative;
+            z-index: 2;
+            display: inline;
+            padding: 0.3rem 3rem;
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            &:hover {
+                transform: translateY(-5px);
+                background-image: url('/img/short_tape_hover_sm.png');
+            }
+        }
+    }
+}
